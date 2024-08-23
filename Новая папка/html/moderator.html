@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Модерация | Pabla Officel Label</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .login-form {
+            max-width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .login-form button {
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+        }
+        .login-form button:hover {
+            background-color: #555;
+        }
+        .error-message {
+            color: red;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pabla Officel Label - Модератор</h1>
+    </header>
+
+    <main>
+        <div class="login-form">
+            <h2>Вход для модераторов</h2>
+            <p class="error-message" id="error-message"></p>
+            <input type="text" id="moderatorCode" placeholder="Введите код модератора">
+            <button id="loginButton">Войти</button>
+        </div>
+    </main>
+
+    <script>
+        // Массив с кодами модераторов для проверки
+        const validModeratorCodes = ['G8$kZ@p3#Xv%9uE1&L*mQ2^D7a!wN4(R8)', '11072008987564321584697152']; // Здесь добавьте реальные коды
+
+        document.getElementById('loginButton').addEventListener('click', () => {
+            const code = document.getElementById('moderatorCode').value;
+            const errorMessage = document.getElementById('error-message');
+
+            if (validModeratorCodes.includes(code)) {
+                window.location.href = 'moderation-dashboard.html'; // Перенаправление на страницу модерации
+            } else {
+                errorMessage.textContent = 'Неверный код модератора';
+            }
+        });
+    </script>
+</body>
+</html>
