@@ -1,0 +1,77 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Чёрный фон */
+    color: #fff; /* Белый текст */
+}
+
+header {
+    background-color: #333; /* Тёмно-серый фон для шапки */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #ffa500; /* Оранжевый цвет для названия */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00f; /* Синий цвет для ссылок */
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #ffa500; /* Оранжевый цвет заголовка */
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #00f; /* Синий цвет для кнопок */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ffa500; /* Оранжевый цвет при наведении */
+}
+
+footer {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}

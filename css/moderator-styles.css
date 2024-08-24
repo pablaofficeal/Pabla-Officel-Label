@@ -1,0 +1,79 @@
+/* Стили, которые были ранее... */
+
+.requests {
+    margin-top: 30px;
+}
+
+.btn-view-release {
+    background-color: #F57C00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-view-release:hover {
+    background-color: #FF9800;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    background-color: #2C2C2C;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn-approve, .btn-reject {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn-reject {
+    background-color: #F44336;
+}
+
+.btn-approve:hover {
+    background-color: #45a049;
+}
+
+.btn-reject:hover {
+    background-color: #e53935;
+}
